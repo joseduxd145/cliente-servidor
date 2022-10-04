@@ -29,7 +29,7 @@ int main(void)
     memset(&servidor, '\0', sizeof(servidor));
     servidor.sin_family = AF_INET;
     servidor.sin_port = htons(PORT);
-    servidor.sin_addr.s_addr = inet_addr(ADDRESS);
+    servidor.sin_addr.s_addr = INADDR_ANY;
 
     aux = bind(conexion, (struct sockaddr*)&servidor, sizeof(servidor));
     if (aux < 0)

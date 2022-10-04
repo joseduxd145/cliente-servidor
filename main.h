@@ -10,7 +10,6 @@
 #include"files.h"
 
 #define PORT 4500
-#define ADDRESS "127.0.0.1"
 #define CLIENTES 32
 #define SIZE_ORDEN 150
 
